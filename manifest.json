@@ -1,0 +1,15 @@
+{
+  "description": "Puts the browser into Kiosk mode for PB applications",
+  "manifest_version": 2,
+  "name": "PB App Player",
+  "version": "1.1",
+  "homepage_url": "https://performancebuildings.ch",
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+  "background":{
+    "scripts": ["js/reloadOnServerError.js", "js/reloadOnClientError.js"]
+  },
+
+  "permissions": ["webNavigation", "tabs", "webRequest", "webRequestBlocking", "<all_urls>"]
+}
